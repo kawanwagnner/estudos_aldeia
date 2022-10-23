@@ -6,6 +6,15 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+header button {
+    display: none;
+}
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -28,7 +37,19 @@
     text-decoration: none;
     padding: 10px;
     color: black;
+}
 
+.icons_left {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0 ;
+}
+
+.icons_left div {
+    margin: 10px 40px;
+    font-size: 20px;
+    color: #000000a6;
 }
 
 h6 {
@@ -55,13 +76,110 @@ span {
 }
 
 img {
-    margin: auto;
+    margin: 20px auto;
     display: block;
-    width:70%;
+    border-radius: 4px;
+    width: 100%;
 }
 
 .paragraph {
     text-align: justify;
-    width: 10px;
-    margin-top: 100px;
+    font-size: 20px;
+}
+
+.container_text {
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+.reference_link {
+    display: block;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    color: #fffafa;
+    font-size: 20px;    
+    background-color: #0b3966;
+    border-radius: 4px;
+    padding: 10px;
+    transition: .3s;
+}
+
+.reference_link:hover {
+    transform: translateY(-0.5em);
+}
+
+/* grid images */
+
+
+.grid_images {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+/* list cars */
+
+.list_cars {
+    display: block;
+    list-style-type: '🚗';
+    width: 200px;
+    padding: 10px;
+}
+
+.list_cars a {
+    color: black;
+    text-decoration: none;
+    background-color: #00000018;
+    padding: 5px;
+    display: block;
+    margin: 10px 0;
+}
+
+
+@media screen and (max-width: 1000px) {
+    main {
+        margin: auto 20px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .grid_images {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    header button {
+        display: block;
+    }
+    .navbar {
+        display: block;
+        background-color: #252323;
+        padding: 20px;
+        position: absolute;
+        width: 100%;
+        top: 50px;
+        right: 0 ;
+        z-index: 10;
+        transform: translateY(-200%);
+        transition: .5s;
+    }
+
+    .list-navbar li a {
+        color: #fffefe;
+        display: block;
+        text-align: center;
+    }
+
+    .active {
+        transform: translateY(0);
+    }
+
+    .navbar li {
+        display: block;
+    }
+
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -7,35 +7,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carros Clássicos</title>
     <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 
 <body>
     <header>
         <div class="container">
-            <h3 id="logo">logo</h3>
+            <h3 id="logo"><em>Class-Cars</em></h3>
             <nav class="navbar">
                 <ul class="list-navbar">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">História</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Contatos</a></li>
+                    <li><a href="impala.html">Impala</a></li>
+                    <li><a href="mustang.html">Mustang</a></li>
+                    <li><a href="fusca.html">Fusca</a></li>
                 </ul>
             </nav>
+            <button id="btnMenu">Show Menu</button>
         </div>
     </header>
     <main>
         <h6>História</h6>
-        <h1>Carros Clássicos</h1>
-        <div class="contatos">
-            <div class="redes">#</div>
-            <div class="redes">#</div>
-            <div class="redes">#</div>
+        <h1>Bem vindo! 👋</h1>
+        <div class="icons_left">
+            <div class="redes"><i class="fa-solid fa-user"></i> Kawan & Gilson</div>
+            <div class="redes"><i class="fa-solid fa-code-branch"></i> Código Website</div>
+            <div class="redes"><i class="fa-solid fa-calendar-days"></i> 23 de outubro de 2022</div>
         </div>
-        <img src="src/css/image/Shelby-GT500-CR.png" alt="Mustang Shelby GT500">
-        <p class="paragraph}">Com a evolução de tecnologias industriais, veículos antigos vêm recebendo remakes aperfeiçoados; mantendo estética mas melhorando desempenho. Um desses é o Mustang Shelby GT500 CR 1967, que ganhou nov... 
-        Leia mais em: https://quatrorodas.abril.com.br/noticias/mustang-shelby-gt500-cr-carroceria-fibra-de-carbono-v8-810-cv/
-        </p>
+        <div class="grid_images">
+            <div><img src="src/image/fusca.jpg" alt="image_fusca"></div>
+            <div><img src="src/image/impala.jpg" alt="image_impala"></div>
+            <div><img src="src/image/Shelby-GT500-CR.png" alt="image_mustang"></div>
+        </div>
+        <div >
+            <ul class="list_cars">
+                <li><a href="fusca.html">Fusca</a></li>
+                <li><a href="impala.html">Impala</a></li>
+                <li><a href="mustang.html">Mustang</a></li>
+            </ul>
+        </div>
     </main>
 </body>
-
+<script src="src/js/menuMobile.js" defer></script>
 </html>
