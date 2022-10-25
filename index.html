@@ -8,12 +8,13 @@
     <title>Carros Clássicos</title>
     <link rel="stylesheet" href="src/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="shortcut icon" href="src/image/Camaro-SS.ico" type="image/x-icon">
 </head>
 
 <body>
     <header>
         <div class="container">
-            <h3 id="logo"><em>Class-Cars</em></h3>
+            <h3 id="logo"><a class="linkNavBar" href="index.html">Class-Cars</a></h3>
             <nav class="navbar">
                 <ul class="list-navbar">
                     <li><a href="#">Home</a></li>
@@ -22,13 +23,15 @@
                     <li><a href="fusca.html">Fusca</a></li>
                 </ul>
             </nav>
-            <button id="btnMenu">Show Menu</button>
+            <button id="btnMenu"><i class="fa-solid fa-bars"></i></button>
         </div>
     </header>
     <main>
-        <h6>História</h6>
-        <h1>Bem vindo! 👋</h1>
-        <div class="icons_left">
+        <div class="hide">
+            <h6>História</h6>
+            <h1>Bem vindo! 👋</h1>
+        </div>
+        <div class="icons_left" class="hide" >
             <div class="redes"><i class="fa-solid fa-user"></i> Kawan & Gilson</div>
             <div class="redes"><i class="fa-solid fa-code-branch"></i> Código Website</div>
             <div class="redes"><i class="fa-solid fa-calendar-days"></i> 23 de outubro de 2022</div>
@@ -38,7 +41,8 @@
             <div><img src="src/image/impala.jpg" alt="image_impala"></div>
             <div><img src="src/image/Shelby-GT500-CR.png" alt="image_mustang"></div>
         </div>
-        <div >
+        <button id="change_theme"><i class="fa-solid fa-moon"></i> Ativar modo de destaque</i></button>
+        <div class="hide">
             <ul class="list_cars">
                 <li><a href="fusca.html">Fusca</a></li>
                 <li><a href="impala.html">Impala</a></li>

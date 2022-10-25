@@ -6,12 +6,34 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* darkmode change */
+body {
+    background-color: #ffffff;
+    color: #000;
+    transition: .5s;
+}
+
+.changeMode{
+    background-color: #262526;
+    color: #fff; 
+}
+
+.hide {
+    display: block;
+}
+
+/* style */
 main {
     max-width: 1100px;
     margin: 30px auto;
 }
 
-header button {
+header {
+    position: relative;
+    transition: .5s;
+}
+
+#btnMenu {
     display: none;
 }
 
@@ -23,6 +45,13 @@ header button {
 
 #logo {
     font-size: 30px;
+    margin: 20px;
+}
+
+.linkNavBar {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
 }
 
 .navbar li {
@@ -43,13 +72,12 @@ header button {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 20px 0 ;
+    margin: 20px 0;
 }
 
 .icons_left div {
     margin: 10px 40px;
     font-size: 20px;
-    color: #000000a6;
 }
 
 h6 {
@@ -98,7 +126,7 @@ img {
     text-align: center;
     text-decoration: none;
     color: #fffafa;
-    font-size: 20px;    
+    font-size: 20px;
     background-color: #0b3966;
     border-radius: 4px;
     padding: 10px;
@@ -119,24 +147,58 @@ img {
     align-items: center;
 }
 
+.grid_images img:hover {
+    width: 100%;
+}
+
 /* list cars */
 
 .list_cars {
     display: block;
-    list-style-type: '🚗';
     width: 200px;
     padding: 10px;
+    transition: .5s;
 }
+
 
 .list_cars a {
     color: black;
+    background: none;
     text-decoration: none;
-    background-color: #00000018;
+    border-bottom: 1px solid black;
     padding: 5px;
     display: block;
     margin: 10px 0;
 }
 
+.list_cars a:hover {
+    width: 300px;   
+}
+
+#btnMenu {
+    margin: 8px;
+    font-size: 27px;
+    padding: 3px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#change_theme {
+    border: none;
+    padding: 5px 10px;
+    font-size: 25px;
+    margin: 0 15px;
+    box-shadow: 0 0 5px #0000006e;
+    border-radius: 2%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#change_theme:hover {
+    background-color: #000;
+    color: #fff;
+}
 
 @media screen and (max-width: 1000px) {
     main {
@@ -152,30 +214,47 @@ img {
 
 
 @media screen and (max-width: 600px) {
-    header button {
+
+    #btnMenu {
         display: block;
+        transition: .3s;
     }
+
     .navbar {
         display: block;
         background-color: #252323;
         padding: 20px;
         position: absolute;
         width: 100%;
-        top: 50px;
-        right: 0 ;
+        top: 60px;
+        right: 0;
         z-index: 10;
-        transform: translateY(-200%);
+        transform: translateX(-200%);
         transition: .5s;
+    }
+
+
+    .changeColorsHeader {
+        background-color: #252323;
+        color: #fffafa;
+    }
+
+    .colorLinkMenu  {
+        color: #fffafa;
+    }
+
+    .changeColorButton {
+        color: #fffafa;
+    }
+
+    .active {
+        transform: translateX(0);
     }
 
     .list-navbar li a {
         color: #fffefe;
         display: block;
         text-align: center;
-    }
-
-    .active {
-        transform: translateY(0);
     }
 
     .navbar li {
