@@ -239,11 +239,7 @@ img {
         color: #fffafa;
     }
 
-    .colorLinkMenu  {
-        color: #fffafa;
-    }
-
-    .changeColorButton {
+    .colorLinkMenu, .changeColorButton  {
         color: #fffafa;
     }
 
